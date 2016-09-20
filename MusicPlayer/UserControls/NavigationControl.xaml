@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="MusicPlayer.UserControls.NavigationControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MusicPlayer.UserControls"
+             xmlns:converters="clr-namespace:MusicPlayer.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    
+    <UserControl.Resources>
+        <converters:NavigationPlaylistsBoolToVisibilityConverter x:Key="PlaylistsConverter"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button Content="Songs" Command="{Binding Path=SongsCommand}"  Grid.Row="0"/>
+        <Button Content="Albums" Command="{Binding Path=AlbumsCommand}" Grid.Row="1"/>
+        <Button Content="Artists" Command="{Binding Path=ArtistsCommand}" Grid.Row="2"/>
+        <Button Content="Playlists" Command="{Binding Path=PlaylistShowHide}" Grid.Row="3"/>
+        <StackPanel Grid.Row="4">
+            <ScrollViewer Visibility="{Binding Path=IsPlaylistsListVisible, Converter={StaticResource PlaylistsConverter}}">
+                <ListBox Name="PlaylistsListBox" SelectionMode="Single" ItemsSource="{Binding Path=PlaylistNames}" Visibility="{Binding Path=IsPlaylistsListVisible, Converter={StaticResource PlaylistsConverter}}"
+                         MouseDoubleClick="PlaylistsListBox_OnMouseDoubleClick"
+                         AllowDrop="True" Drop="PlaylistsListBox_OnDrop" DragEnter="PlaylistsListBox_OnDragEnter">
+                </ListBox>
+            </ScrollViewer>
+            <Button Content="+ Add New" Command="{Binding Path=AddPlaylistCommand}" Visibility="{Binding Path=IsPlaylistsListVisible, Converter={StaticResource PlaylistsConverter}}"></Button>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

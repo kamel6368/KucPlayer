@@ -1,0 +1,11 @@
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\bin\Debug\MusicPlayer.Test.dll
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\bin\Debug\MusicPlayer.Test.pdb
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\MusicPlayer.Test_MarkupCompile.cache
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\MusicPlayer.Test_MarkupCompile.lref
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\Themes\Generic.baml
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\MusicPlayer.Test.g.resources
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\MusicPlayer.Test.Properties.Resources.resources
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\MusicPlayer.Test.csproj.GenerateResource.Cache
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\MusicPlayer.Test.dll
+C:\Users\Kamil\Desktop\MusicPlayer\MusicPlayer.Test\obj\Debug\MusicPlayer.Test.pdb
